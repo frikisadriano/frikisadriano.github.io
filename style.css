@@ -254,6 +254,32 @@ svg.fill { fill: currentColor; stroke: none; }
 .project-featured h3 { font-size: 30px; }
 .project-featured .link-btn { margin-top: 8px; }
 
+/* Parcours */
+.jobs { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 40px; }
+.job {
+  display: flex; flex-direction: column; padding: 26px; border-radius: var(--radius);
+  background: var(--surface); border: 1px solid var(--line); transition: transform .25s, box-shadow .25s;
+}
+.job:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.job-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; }
+.job-logo {
+  display: grid; place-items: center; width: 48px; height: 48px; border-radius: 14px;
+  background: #0d1b2a; color: #f5b300; font-family: var(--font-title); font-weight: 700; font-size: 15px;
+}
+:root[data-theme="dark"] .job-logo { box-shadow: inset 0 0 0 1px var(--line); }
+.job-status {
+  display: inline-flex; align-items: center; gap: 8px; padding: 6px 12px; border-radius: 999px;
+  background: var(--bg-alt); border: 1px solid var(--line); font-size: 13px; font-weight: 600; color: var(--muted);
+}
+.job-status.is-current { color: var(--ink); }
+.job h3 { font-size: 20px; }
+.job-company { margin: 6px 0 22px; font-weight: 600; color: var(--accent-ink); }
+.job-period {
+  display: flex; align-items: center; gap: 8px; margin-top: auto; padding-top: 16px;
+  border-top: 1px solid var(--line); font-size: 14px; color: var(--muted);
+}
+.job-period svg { width: 16px; height: 16px; }
+
 /* Méthode */
 .steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 40px; counter-reset: step; }
 .steps li { padding: 26px; border-radius: var(--radius); background: var(--surface); border: 1px solid var(--line); position: relative; }
@@ -364,6 +390,10 @@ svg.fill { fill: currentColor; stroke: none; }
   .nav.is-open { display: flex; }
   .nav a { padding: 12px 14px; font-size: 16px; }
   .nav-cta-mobile { display: block; background: var(--primary); color: var(--primary-ink) !important; text-align: center; margin-top: 8px; }
+}
+
+@media (max-width: 760px) {
+  .jobs { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 640px) {
