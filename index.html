@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AHOUE Adriano Frikis — Développeur web full-stack</title>
+  <meta name="description" content="Portfolio d'AHOUE Adriano Frikis, développeur web full-stack au Bénin : plateformes web, logiciels de gestion et sites vitrines.">
+  <meta property="og:title" content="AHOUE Adriano Frikis — Développeur web full-stack">
+  <meta property="og:description" content="Plateformes web, logiciels de gestion et sites vitrines, pensés pour le mobile.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://frikisadriano.github.io/">
+  <meta property="og:image" content="https://frikisadriano.github.io/assets/adriano.jpg">
+  <link rel="canonical" href="https://frikisadriano.github.io/">
+  <meta name="theme-color" content="#0d1b2a">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230d1b2a'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='28' fill='%23f5b300'%3EAF%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script>
+    // Applique le thème avant l'affichage pour éviter un flash
+    document.documentElement.classList.add('js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (t) document.documentElement.setAttribute('data-theme', t);
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#contenu">Aller au contenu</a>
+
+  <!-- ===== En-tête ===== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="#accueil" class="logo" aria-label="Accueil">
+        <span class="logo-mark">AF</span>
+        <span class="logo-text">Adriano Frikis</span>
+      </a>
+
+      <nav class="nav" id="nav" aria-label="Navigation principale">
+        <a href="#apropos">À propos</a>
+        <a href="#services">Services</a>
+        <a href="#projets">Projets</a>
+        <a href="#methode">Méthode</a>
+        <a href="#contact" class="nav-cta-mobile">Me contacter</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" id="theme-toggle" type="button" aria-label="Changer de thème">
+          <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M2 12h2.5M19.5 12H22M4.9 4.9l1.8 1.8M17.3 17.3l1.8 1.8M4.9 19.1l1.8-1.8M17.3 6.7l1.8-1.8"/></svg>
+          <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5Z"/></svg>
+        </button>
+        <a href="#contact" class="btn btn-primary btn-sm header-cta">Me contacter</a>
+        <button class="icon-btn menu-btn" id="menu-btn" type="button" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="contenu">
+    <!-- ===== Accueil ===== -->
+    <section class="hero" id="accueil">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="status"><span class="status-dot"></span>Disponible pour de nouveaux projets</p>
+          <h1 class="hero-title">AHOUE <span>Adriano Frikis</span></h1>
+          <p class="hero-role">Développeur web full-stack</p>
+          <p class="hero-lead">
+            Je conçois des plateformes web, des logiciels de gestion et des sites vitrines
+            rapides, sécurisés et pensés pour le mobile.
+          </p>
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary">
+              Voir mes projets
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </a>
+            <a href="#" class="btn btn-whatsapp" data-wa data-wa-text="Bonjour Adriano, j'ai vu votre portfolio et j'aimerais discuter d'un projet.">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3Z"/></svg>
+              Discuter sur WhatsApp
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <figure class="hero-photo">
+            <img src="assets/adriano.jpg" alt="Portrait d'AHOUE Adriano Frikis" width="640" height="800">
+          </figure>
+          <a href="#projets" class="hero-chip chip-top">
+            <img class="chip-thumb" src="assets/projets/savoirbenin-mobile.webp" alt="" width="780" height="1688">
+            <span><strong>Projet phare</strong><br>Plateforme SavoirBénin</span>
+          </a>
+          <div class="hero-chip chip-bottom" aria-hidden="true">
+            <span class="hero-chip-icon">
+              <svg viewBox="0 0 24 24"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5"/></svg>
+            </span>
+            <span><strong>Full-stack</strong><br>React · Next.js · Node.js</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <ul class="highlights">
+          <li>
+            <strong>Full-stack</strong>
+            <span>De l'interface à la base de données</span>
+          </li>
+          <li>
+            <strong>Mobile Money</strong>
+            <span>Paiements FedaPay intégrés</span>
+          </li>
+          <li>
+            <strong>Mobile d'abord</strong>
+            <span>Des sites pensés pour le téléphone</span>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===== À propos ===== -->
+    <section class="section" id="apropos">
+      <div class="container about-grid">
+        <div>
+          <p class="eyebrow">À propos</p>
+          <h2 class="section-title">Des outils web utiles, adaptés aux réalités locales.</h2>
+        </div>
+        <div class="about-text reveal">
+          <p>
+            Je suis <strong>AHOUE Adriano Frikis</strong>, développeur web full-stack basé au Bénin.
+            Je crée des solutions web qui servent au quotidien : une plateforme éducative pour les élèves
+            béninois, un logiciel de gestion pour les transitaires, des outils de simulation financière et
+            des sites vitrines pour les entreprises.
+          </p>
+          <p>
+            Je travaille sur toute la chaîne : l'interface, la logique métier, la base de données,
+            la sécurité et les paiements Mobile Money. Mon objectif : des outils simples à utiliser,
+            rapides sur téléphone et faciles à faire évoluer.
+          </p>
+          <ul class="about-facts">
+            <li><span>Localisation</span>Bénin · projets à distance</li>
+            <li><span>Spécialité</span>Plateformes &amp; logiciels web</li>
+            <li><span>Langue</span>Français</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Services ===== -->
+    <section class="section section-alt" id="services">
+      <div class="container">
+        <p class="eyebrow">Services</p>
+        <h2 class="section-title">Ce que je peux faire pour vous</h2>
+
+        <div class="cards-3">
+          <article class="service reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M8 21h8M12 17v4"/></svg>
+            </div>
+            <h3>Plateformes &amp; applications web</h3>
+            <p>Des plateformes complètes : comptes utilisateurs, contenus, recherche et paiement par Mobile Money.</p>
+            <ul class="tags"><li>Next.js</li><li>React</li><li>Supabase</li><li>FedaPay</li></ul>
+          </article>
+          <article class="service reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4-9-4Z"/><path d="M3 12l9 4 9-4M3 17l9 4 9-4"/></svg>
+            </div>
+            <h3>Logiciels de gestion sur mesure</h3>
+            <p>Stocks, clients, livraisons, factures : des outils métiers adaptés à votre façon de travailler.</p>
+            <ul class="tags"><li>Node.js</li><li>Express</li><li>MySQL</li><li>API REST</li></ul>
+          </article>
+          <article class="service reveal">
+            <div class="service-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg>
+            </div>
+            <h3>Sites vitrines</h3>
+            <p>Un site rapide, bien référencé sur Google et adapté au mobile pour présenter votre entreprise.</p>
+            <ul class="tags"><li>HTML / CSS</li><li>JavaScript</li><li>PHP</li><li>SEO</li></ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Projets ===== -->
+    <section class="section" id="projets">
+      <div class="container">
+        <div class="projects-head">
+          <div>
+            <p class="eyebrow">Projets</p>
+            <h2 class="section-title">Projets réalisés</h2>
+          </div>
+          <div class="filters" role="group" aria-label="Filtrer les projets">
+            <button type="button" class="filter is-active" data-filter="tous" aria-pressed="true">Tous <span>5</span></button>
+            <button type="button" class="filter" data-filter="plateforme" aria-pressed="false">Plateformes <span>2</span></button>
+            <button type="button" class="filter" data-filter="gestion" aria-pressed="false">Gestion &amp; outils <span>2</span></button>
+            <button type="button" class="filter" data-filter="vitrine" aria-pressed="false">Sites vitrines <span>1</span></button>
+          </div>
+        </div>
+
+        <div class="projects">
+          <!-- SavoirBénin -->
+          <article class="project project-featured reveal" data-category="plateforme">
+            <div class="project-media">
+              <img src="assets/projets/savoirbenin.webp" alt="Catalogue des cours de la plateforme SavoirBénin" width="1280" height="800" loading="lazy">
+              <span class="badge badge-accent">★ Projet phare</span>
+            </div>
+            <div class="project-body">
+              <p class="project-kind">Plateforme éducative</p>
+              <h3>SavoirBénin</h3>
+              <p>Plateforme d'apprentissage pour les élèves du Bénin, de la 3ème à la Terminale : cours gratuits, exercices corrigés et épreuves du BEPC et du BAC.</p>
+              <ul class="tags"><li>Next.js</li><li>React</li><li>Tailwind CSS</li><li>Supabase</li><li>FedaPay</li></ul>
+              <button type="button" class="link-btn" data-open>Voir le détail <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+            <div class="project-details" hidden>
+              <ul>
+                <li>153 cours gratuits et 1 530 exercices corrigés, classés par classe et par matière</li>
+                <li>Recherche instantanée d'un cours ou d'une notion</li>
+                <li>Comptes élèves gratuits avec connexion sécurisée</li>
+                <li>Épreuves d'examens (sujet et correction) débloquées par paiement Mobile Money via FedaPay</li>
+                <li>Annuaire de professeurs à domicile vérifiés sur justificatifs</li>
+                <li>Formules mathématiques affichées proprement (KaTeX)</li>
+              </ul>
+              <p class="details-stack">Next.js 16 · React 19 · Tailwind CSS 4 · Supabase (Auth, PostgreSQL, Storage) · FedaPay · KaTeX</p>
+            </div>
+          </article>
+
+          <!-- TransitHub -->
+          <article class="project reveal" data-category="gestion">
+            <div class="project-media">
+              <img src="assets/projets/transithub.jpg" alt="Tableau de bord de TransitHub" width="1280" height="800" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-kind">Logiciel de gestion</p>
+              <h3>TransitHub</h3>
+              <p>Logiciel pour les entreprises de transit et d'import-export : clients, stock d'entrepôt, livraisons et facturation.</p>
+              <ul class="tags"><li>React</li><li>Node.js</li><li>Express</li><li>MySQL</li><li>Prisma</li></ul>
+              <button type="button" class="link-btn" data-open>Voir le détail <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+            <div class="project-details" hidden>
+              <ul>
+                <li>Tableau de bord : stock total, livraisons en attente, chiffre d'affaires, mouvements</li>
+                <li>Gestion des clients, des marchandises, des lots et des emplacements d'entrepôt</li>
+                <li>Suivi des mouvements de stock, du conditionnement et des livraisons</li>
+                <li>Factures générées au format PDF</li>
+                <li>Connexion sécurisée (jetons JWT, mots de passe chiffrés avec bcrypt)</li>
+              </ul>
+              <p class="details-stack">React · Vite · Tailwind CSS · Node.js · Express · MySQL · Prisma · JWT · PDFKit</p>
+              <p class="details-note">Capture réalisée avec des données de démonstration.</p>
+            </div>
+          </article>
+
+          <!-- Waofin -->
+          <article class="project reveal" data-category="plateforme">
+            <div class="project-media">
+              <img src="assets/projets/waofin.jpg" alt="Page d'accueil de Waofin Épargne Afrique" width="1280" height="720" loading="lazy">
+              <span class="badge">En développement</span>
+            </div>
+            <div class="project-body">
+              <p class="project-kind">Fintech · Épargne</p>
+              <h3>Waofin Épargne Afrique</h3>
+              <p>Application d'éducation financière et de simulation d'épargne, pensée pour les Africains et la diaspora.</p>
+              <ul class="tags"><li>React</li><li>TypeScript</li><li>Vite</li><li>Tailwind CSS</li></ul>
+              <button type="button" class="link-btn" data-open>Voir le détail <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+            <div class="project-details" hidden>
+              <ul>
+                <li>Interface moderne et responsive : accueil, présentation des produits, connexion</li>
+                <li>Parcours d'inscription et tableau de bord de l'épargnant</li>
+                <li>Simulateur de gains et contenus d'éducation financière (en cours de développement)</li>
+                <li>Code en TypeScript, organisé en composants réutilisables</li>
+              </ul>
+              <p class="details-stack">React · TypeScript · Vite · Tailwind CSS · ESLint</p>
+            </div>
+          </article>
+
+          <!-- FinanceStart -->
+          <article class="project reveal" data-category="gestion">
+            <div class="project-media">
+              <img src="assets/projets/financestart.jpg" alt="Accueil du simulateur FinanceStart" width="1280" height="720" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-kind">Outil financier</p>
+              <h3>FinanceStart Simulateur</h3>
+              <p>Simulateur qui guide les porteurs de projet pas à pas dans leur prévisionnel financier, en francs CFA.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li></ul>
+              <button type="button" class="link-btn" data-open>Voir le détail <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+            <div class="project-details" hidden>
+              <ul>
+                <li>Parcours en 4 étapes : informations générales, besoins de démarrage, financement, charges fixes</li>
+                <li>Totaux et prévisions calculés automatiquement</li>
+                <li>Saisie conservée d'une étape à l'autre</li>
+                <li>Thème clair / sombre et affichage adapté au mobile</li>
+              </ul>
+              <p class="details-stack">HTML5 · CSS3 · JavaScript</p>
+            </div>
+          </article>
+
+          <!-- SCIB International -->
+          <article class="project reveal" data-category="vitrine">
+            <div class="project-media">
+              <img src="assets/projets/scib.jpg" alt="Page d'accueil du site de SCIB International" width="1280" height="800" loading="lazy">
+            </div>
+            <div class="project-body">
+              <p class="project-kind">Site vitrine</p>
+              <h3>SCIB International</h3>
+              <p>Site d'une entreprise béninoise de construction, d'énergie, de logistique et d'événementiel.</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>PHP</li></ul>
+              <button type="button" class="link-btn" data-open>Voir le détail <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+            </div>
+            <div class="project-details" hidden>
+              <ul>
+                <li>Présentation des services et galerie de réalisations</li>
+                <li>Formulaire de demande de devis traité en PHP, avec page de confirmation</li>
+                <li>Référencement (SEO) optimisé et carte Google Maps</li>
+                <li>Mentions légales et politique de confidentialité</li>
+                <li>Design responsive et animations en JavaScript</li>
+              </ul>
+              <p class="details-stack">HTML5 · CSS3 · JavaScript · PHP</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Méthode ===== -->
+    <section class="section section-alt" id="methode">
+      <div class="container">
+        <p class="eyebrow">Méthode</p>
+        <h2 class="section-title">Comment se déroule un projet</h2>
+        <ol class="steps">
+          <li class="reveal">
+            <span class="step-num">01</span>
+            <h3>Écoute</h3>
+            <p>Je comprends votre activité, vos utilisateurs et ce que l'outil doit vous apporter.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num">02</span>
+            <h3>Conception</h3>
+            <p>Maquettes, parcours et choix techniques : nous validons ensemble avant de coder.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num">03</span>
+            <h3>Développement</h3>
+            <p>J'avance par étapes, avec des démonstrations régulières pour suivre le projet.</p>
+          </li>
+          <li class="reveal">
+            <span class="step-num">04</span>
+            <h3>Mise en ligne</h3>
+            <p>Déploiement, prise en main par vos équipes et suivi après la livraison.</p>
+          </li>
+        </ol>
+
+        <div class="stack reveal">
+          <h3>Technologies utilisées</h3>
+          <div class="stack-groups">
+            <div>
+              <p>Front-end</p>
+              <ul class="tags"><li>HTML5</li><li>CSS3</li><li>JavaScript</li><li>TypeScript</li><li>React</li><li>Next.js</li><li>Tailwind CSS</li><li>Vite</li></ul>
+            </div>
+            <div>
+              <p>Back-end</p>
+              <ul class="tags"><li>Node.js</li><li>Express</li><li>PHP</li><li>API REST</li><li>JWT</li></ul>
+            </div>
+            <div>
+              <p>Données &amp; services</p>
+              <ul class="tags"><li>MySQL</li><li>PostgreSQL</li><li>Prisma</li><li>Supabase</li><li>FedaPay</li><li>Git &amp; GitHub</li></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section class="section contact" id="contact">
+      <div class="container contact-grid">
+        <div>
+          <p class="eyebrow">Contact</p>
+          <h2 class="section-title">Un projet en tête ?<br>Parlons-en.</h2>
+          <p class="contact-lead">Basé au Bénin, disponible pour des projets sur place et à distance. Écrivez-moi sur WhatsApp ou par e-mail, je vous réponds rapidement.</p>
+
+          <ul class="contact-list">
+            <li>
+              <a href="#" data-wa data-wa-text="Bonjour Adriano, j'ai vu votre portfolio et j'aimerais discuter d'un projet.">
+                <span class="contact-icon wa">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3Z"/></svg>
+                </span>
+                <span><small>WhatsApp</small><span data-wa-display>+229 01 68 76 05 08</span></span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:adrianoahoue011@gmail.com?subject=Projet%20web">
+                <span class="contact-icon mail">
+                  <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+                </span>
+                <span><small>E-mail</small>adrianoahoue011@gmail.com</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/in/adriano-frikis-ahoue-5238b2235" target="_blank" rel="noopener">
+                <span class="contact-icon in">
+                  <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5ZM3 9.75h4V21H3V9.75ZM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5c0-1.2-.02-2.73-1.66-2.73-1.67 0-1.93 1.3-1.93 2.64V21h-4V9.75Z"/></svg>
+                </span>
+                <span><small>LinkedIn</small>Adriano Frikis AHOUE</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact-form reveal" id="contact-form" novalidate>
+          <h3>Envoyer un message</h3>
+          <p class="form-hint">Votre message s'ouvrira dans WhatsApp, prêt à être envoyé.</p>
+          <label>
+            Votre nom
+            <input type="text" name="nom" autocomplete="name" required>
+          </label>
+          <label>
+            Type de projet
+            <select name="type">
+              <option>Plateforme ou application web</option>
+              <option>Logiciel de gestion</option>
+              <option>Site vitrine</option>
+              <option>Autre demande</option>
+            </select>
+          </label>
+          <label>
+            Votre message
+            <textarea name="message" rows="4" required placeholder="Décrivez votre projet en quelques lignes…"></textarea>
+          </label>
+          <p class="form-error" id="form-error" role="alert" hidden>Indiquez votre nom et votre message.</p>
+          <button type="submit" class="btn btn-whatsapp btn-block">Envoyer sur WhatsApp</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year">2026</span> AHOUE Adriano Frikis · Développeur web full-stack</p>
+      <a href="#accueil">Retour en haut ↑</a>
+    </div>
+  </footer>
+
+  <!-- Bouton WhatsApp flottant -->
+  <a href="#" class="wa-float" data-wa data-wa-text="Bonjour Adriano, j'ai vu votre portfolio et j'aimerais discuter d'un projet." aria-label="Discuter sur WhatsApp">
+    <svg viewBox="0 0 24 24" aria-hidden="true" class="fill"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.2-.2-.5-.3Z"/></svg>
+  </a>
+
+  <!-- Fenêtre de détail d'un projet -->
+  <dialog class="modal" id="project-modal" aria-labelledby="modal-title">
+    <button type="button" class="icon-btn modal-close" data-close aria-label="Fermer">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <img class="modal-img" src="" alt="">
+    <div class="modal-body">
+      <p class="project-kind" id="modal-kind"></p>
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <div id="modal-details"></div>
+      <a href="#" class="btn btn-primary" id="modal-demo" data-wa>Demander une démonstration</a>
+    </div>
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
