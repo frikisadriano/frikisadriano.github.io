@@ -163,13 +163,9 @@ svg.fill { fill: currentColor; stroke: none; }
   position: absolute; display: flex; align-items: center; gap: 12px;
   padding: 10px 16px 10px 10px; border-radius: 16px; background: var(--surface); border: 1px solid var(--line);
   box-shadow: var(--shadow); font-size: 13px; line-height: 1.35; color: var(--muted);
-  transition: transform .2s;
 }
 .hero-chip strong { color: var(--ink); }
-.chip-top { top: 40px; left: -40px; }
-.chip-top:hover { transform: translateY(-2px); }
 .chip-bottom { bottom: 64px; right: -12px; }
-.chip-thumb { width: 38px; height: 38px; border-radius: 10px; object-fit: cover; object-position: top; }
 .hero-chip-icon { display: grid; place-items: center; width: 38px; height: 38px; border-radius: 10px; background: var(--accent-soft); color: var(--accent-ink); }
 .hero-chip-icon svg { width: 20px; height: 20px; }
 
@@ -377,9 +373,8 @@ svg.fill { fill: currentColor; stroke: none; }
   .hero-visual::before { inset: 24px 0 0 28px; border-radius: 26px; }
   .hero-photo { border-radius: 22px; }
   .hero-chip { font-size: 12px; padding: 8px 12px 8px 8px; }
-  .chip-top { top: 24px; left: -12px; }
   .chip-bottom { bottom: 44px; right: -8px; }
-  .chip-thumb, .hero-chip-icon { width: 32px; height: 32px; }
+  .hero-chip-icon { width: 32px; height: 32px; }
   .highlights { grid-template-columns: 1fr; margin-top: 40px; }
   .highlights li + li { border-left: 0; border-top: 1px solid var(--line); }
   .about-facts { grid-template-columns: 1fr; }
