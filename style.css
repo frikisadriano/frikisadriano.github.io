@@ -221,7 +221,7 @@ svg.fill { fill: currentColor; stroke: none; }
 .filter:hover { color: var(--ink); }
 .filter.is-active { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
 
-.projects { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 40px; }
+.projects { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 40px; }
 .project {
   display: flex; flex-direction: column; border-radius: var(--radius); overflow: hidden;
   background: var(--surface); border: 1px solid var(--line); transition: transform .25s, box-shadow .25s;
@@ -347,6 +347,7 @@ svg.fill { fill: currentColor; stroke: none; }
   .cards-3 { grid-template-columns: 1fr; }
   .steps { grid-template-columns: repeat(2, 1fr); }
   .stack-groups { grid-template-columns: 1fr; gap: 20px; }
+  .projects { grid-template-columns: repeat(2, 1fr); }
   .project-featured { flex-direction: column; }
   .project-featured .project-media { aspect-ratio: 16 / 10; min-height: 0; border-right: 0; border-bottom: 1px solid var(--line); }
   .project-featured .project-body { padding: 24px 26px 26px; }
